@@ -174,18 +174,18 @@ body {
     .iphone-off{
       right: 0;
       top: 800px;
-      animation: slideUp 1s linear  0s forwards 1;
+      animation: slideUp 1s linear  1s forwards 1;
     }
     .iphone-on{
       right: 29px;
       top: 118px;
-      animation: powerOn .6s linear 2s 1 forwards;
+      animation: powerOn .6s linear 3s 1 forwards;
       opacity: 0;
     }
     .iphone-btn{
       right: 80px;
       top: 800px;
-      animation: btnSlideUp 2s linear  0s forwards;
+      animation: btnSlideUp 2s linear  1s forwards;
 
     }
 
