@@ -20,7 +20,7 @@ body {
   margin: 0 auto;
 }
 
-/*navigation bar*/
+/* NAVIGATION BAR */
 .header {
   background: linear-gradient(rgba(224, 60, 60, 0.7725490196), rgba(224, 60, 60, 0.3882352941)), url(../img/hero-bg.png);
   background-size: cover;
@@ -33,11 +33,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
   color: white;
 }
 .header .navbar .brand {
-  width: 120px;
   z-index: 2;
 }
 .header .navbar .toggle-button {
@@ -70,7 +68,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
+  font-size: 16px;
   transition: all 0.5s;
 }
 .header .navbar .nav .nav-item {
@@ -124,32 +122,34 @@ body {
 }
 .header .hero {
   color: white;
-  padding: 50px 0;
+  padding: 80px 0;
   display: flex;
+  justify-content: space-between;
 }
 .header .hero__text {
-  width: 50%;
+  width: 40%;
   height: 100%;
 }
 .header .hero__text--heading {
-  font-size: 55px;
+  font-size: 38px;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 800;
 }
 .header .hero__text--text {
-  font-size: 30px;
-  line-height: 1.2;
-  margin: 30px 0;
+  font-size: 22px;
+  line-height: 1.3;
+  margin: 40px 0;
+  font-weight: 100;
 }
 .header .hero__text--cta {
   color: white;
   background-color: #2e2e38;
   display: inline-block;
-  padding: 20px 40px;
+  padding: 12px 24px;
   border-radius: 100px;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -158,34 +158,37 @@ body {
   width: fit-content;
 }
 .header .hero__text--cta img {
-  width: 20px;
+  width: 18px;
   margin-right: 15px;
 }
 .header .hero__picture {
   position: relative;
   width: 50%;
 }
-.header .hero__picture img {
+.header .hero__picture > img {
   position: absolute;
 }
 .header .hero__picture .iphone-off {
+  width: 300px;
   right: 0;
   top: 800px;
-  -webkit-animation: slideUp 1s linear 0s forwards 1;
-          animation: slideUp 1s linear 0s forwards 1;
+  -webkit-animation: slideUp 1s linear 1s forwards 1;
+          animation: slideUp 1s linear 1s forwards 1;
 }
 .header .hero__picture .iphone-on {
-  right: 29px;
-  top: 118px;
-  -webkit-animation: powerOn 0.6s linear 2s 1 forwards;
-          animation: powerOn 0.6s linear 2s 1 forwards;
+  width: 260px;
+  right: 20px;
+  top: 88px;
+  -webkit-animation: powerOn 0.6s linear 3s 1 forwards;
+          animation: powerOn 0.6s linear 3s 1 forwards;
   opacity: 0;
 }
 .header .hero__picture .iphone-btn {
-  right: 80px;
+  width: 40px;
+  right: 60px;
   top: 800px;
-  -webkit-animation: btnSlideUp 2s linear 0s forwards;
-          animation: btnSlideUp 2s linear 0s forwards;
+  -webkit-animation: btnSlideUp 2s linear 1s forwards;
+          animation: btnSlideUp 2s linear 1s forwards;
 }
 
 @-webkit-keyframes slideUp {
@@ -210,13 +213,13 @@ body {
     top: 800px;
   }
   50% {
-    top: -4px;
+    top: -3px;
   }
   90% {
-    top: -2px;
+    top: -1px;
   }
   100% {
-    top: -4px;
+    top: -3px;
   }
 }
 @keyframes btnSlideUp {
@@ -224,13 +227,13 @@ body {
     top: 800px;
   }
   50% {
-    top: -4px;
+    top: -3px;
   }
   90% {
-    top: -2px;
+    top: -1px;
   }
   100% {
-    top: -4px;
+    top: -3px;
   }
 }
 @-webkit-keyframes powerOn {
@@ -249,57 +252,5 @@ body {
     opacity: 1;
   }
 }
-/*end navigation bar */
-/* MEDIA QUERIES / RESPONSIVENESS */
-@media only screen and (max-width: 1120px) {
-  .cta-info {
-    padding-right: 40px;
-  }
-  .download-info {
-    width: 80%;
-  }
-}
-@media only screen and (max-width: 820px) {
-  .iphone,
-.iphone-on,
-.iphone-btn {
-    display: none;
-  }
-  .cta-info {
-    width: 100%;
-    text-align: center;
-  }
-  .p-features {
-    padding: 0px 30px;
-  }
-  .col-4-app {
-    width: 100%;
-    float: none;
-    margin-bottom: 50px;
-  }
-  .row h3 {
-    margin: 15px 0;
-  }
-  .fb,
-.tw,
-.dr {
-    margin-top: 20px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .col-4-footer {
-    width: 100%;
-    float: none;
-    margin-top: 0px;
-    font-weight: 400;
-  }
-  .footer-logo {
-    margin-bottom: 35px;
-  }
-}
-@media only screen and (max-width: 700px) {
-  .cr:after,
-.me:after {
-    display: none;
-  }
-}/*# sourceMappingURL=style.css.map */
+/*END HERO SECTION */
+/* MEDIA QUERIES / RESPONSIVENESS *//*# sourceMappingURL=style.css.map */
