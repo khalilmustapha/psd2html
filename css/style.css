@@ -253,6 +253,54 @@
   text-decoration: none;
 }
 
+footer {
+  background-color: #2e2e38;
+  color: #d7dedc;
+  padding: 120px 0;
+}
+footer .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+footer .col {
+  width: 33%;
+}
+footer .col h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+footer .col ul {
+  margin: 0;
+  padding: 0;
+}
+footer .col .about {
+  font-style: italic;
+  font-size: 13px;
+}
+footer .col li {
+  font-size: 13px;
+  list-style: none;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+footer .col .posts > li {
+  padding-left: 35px;
+  position: relative;
+  line-height: 25px;
+}
+footer .col .posts li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 25px;
+  background-color: #da332d;
+}
+
 @-webkit-keyframes slideUp {
   from {
     top: 800px;

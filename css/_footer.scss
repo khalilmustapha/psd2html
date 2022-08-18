@@ -1,0 +1,50 @@
+footer{
+  background-color: $darkGray;
+  color: $lightGray;
+  padding: 120px 0;
+  & .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+  }
+  .col{
+    width: 33%;
+    h4{
+      font-size: 18px;
+      font-weight: 600;
+      margin: 20px 0;
+    }
+    ul{
+      margin: 0;
+      padding: 0;
+    }
+    .about{
+      font-style: italic;
+      font-size: 13px;
+
+    }
+    li{
+      font-size: 13px;      
+      list-style: none;
+      font-weight: 300;
+      margin-bottom: 10px;
+
+      }
+      .posts > li{
+        padding-left: 35px;        
+        position: relative;
+        line-height: 25px;
+
+      }
+      .posts li::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 25px;
+        background-color: $darkRed;
+      }
+  }
+}
