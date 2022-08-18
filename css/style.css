@@ -301,6 +301,28 @@ footer .col .posts li::before {
   background-color: #da332d;
 }
 
+.copyright {
+  background-color: #d7dedc;
+  padding: 40px 0;
+}
+.copyright .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copyright .row > * {
+  width: 33%;
+}
+.copyright .row p > a {
+  text-decoration: none;
+  color: black;
+}
+.copyright .row .images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @-webkit-keyframes slideUp {
   from {
     top: 800px;
