@@ -1,0 +1,175 @@
+.header{    
+  background: 
+  linear-gradient($gradient1, $gradient2)
+  ,url(../img/hero-bg.png);
+  background-size: cover;
+  background-position: top left;
+  height: 100vh;
+    overflow: hidden;
+
+  .navbar{
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  .brand{
+    z-index: 2;
+  }
+  
+  .toggle-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;
+    z-index: 2;
+      .bar{
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        }
+    @media (min-width: 768px){
+      visibility:hidden;
+    }
+  }
+  
+  .nav{
+    margin:0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    transition: all .5s;
+    .nav-item{
+      list-style: none;
+      margin: 20px;
+      padding: 10px 20px;
+
+       @media (min-width: 768px){
+        margin: 0;
+        }
+    }
+    .nav-link{
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff;
+      transition: all .2s;
+      padding: 8px 0 ;
+      position: relative;
+      &::before{
+        content: "";
+        background-color: white;
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        transition: all .3s;
+      }
+      &:hover::before{
+        width: 100%;
+      }
+      &.active::before{
+        width: 100%;
+
+      }
+
+      @media (min-width: 768px){
+        display: inline-block;        
+    }
+    }
+    
+    @media (min-width: 768px){
+      position: static;
+      flex-direction: row;
+      justify-content:flex-end;
+    }
+    
+  }
+  
+  
+ .open{
+  right: 0 !important ;
+} }
+
+
+.hero{
+color: white;
+padding: 80px 0;
+display: flex;
+justify-content: space-between;
+
+&__text{
+  width: 40%;
+  height: 100%;
+  &--heading{
+    font-size: 38px;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+  &--text{
+    font-size: 22px;
+    line-height: 1.3;
+    margin: 40px 0;
+    font-weight: 100;
+  }
+  &--cta{
+    color: white;
+    background-color: $darkGray;
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 100px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    img{
+      width: 18px;
+      margin-right: 15px;
+      
+    }
+  }
+}
+
+&__picture{
+  position: relative;
+  width: 50%;
+  & > img{
+    position: absolute;
+  }
+  .iphone-off{
+    width: 300px;
+    right: 0;
+    top: 800px;
+    animation: slideUp 1s linear  1s forwards 1;
+  }
+  .iphone-on{
+    width: 260px;
+    right: 20px;
+    top: 88px;
+    animation: powerOn .6s linear 3s 1 forwards;
+    opacity: 0;
+  }
+  .iphone-btn{
+    width: 40px;
+    right: 60px;
+    top: 800px;
+    animation: btnSlideUp 2s linear  1s forwards;
+
+  }
+
+}
+}
+
+} 
